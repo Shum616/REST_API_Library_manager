@@ -1,0 +1,24 @@
+###
+GET http://localhost:8080/readingRoom/all
+
+###
+GET http://localhost:8080/readingRoom/1
+
+###
+GET http://localhost:8080/readingRoom/reader/5
+
+###
+GET http://localhost:8080/readingRoom/book/1
+
+###
+POST http://localhost:8080/readingRoom/register
+Content-Type: application/json
+
+{
+  "readerId": "5",
+  "bookId": "1"
+
+}
+
+###
+DELETE http://localhost:8080/readingRoom/6

@@ -1,0 +1,38 @@
+###
+GET http://localhost:8080/librarian/all
+
+###
+GET http://localhost:8080/librarian/1
+
+###
+POST http://localhost:8080/librarian
+Content-Type: application/json
+
+{
+  "name": "James"
+}
+
+###
+POST http://localhost:8080/librarian/register
+Content-Type: application/json
+
+{
+  "name": "James",
+  "surname": "Johnson",
+  "birthday": "1997-03-04",
+  "phone": "########"
+}
+
+###
+POST http://localhost:8080/librarian/register
+Content-Type: application/json
+
+{
+  "name": "Oliver",
+  "surname": "Stuck",
+  "birthday": "1997-03-04",
+  "phone": "########"
+}
+
+###
+DELETE http://localhost:8080/librarian/3

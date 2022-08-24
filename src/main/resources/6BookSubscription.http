@@ -1,0 +1,24 @@
+###
+GET http://localhost:8080/bookSubscription/all
+
+###
+GET http://localhost:8080/bookSubscription/1
+
+###
+GET http://localhost:8080/bookSubscription/subscription/6
+
+###
+GET http://localhost:8080/bookSubscription/book/1
+
+###
+POST http://localhost:8080/bookSubscription/register
+Content-Type: application/json
+
+{
+  "subscriptionId": "6",
+  "bookId": "1"
+
+}
+
+###
+DELETE http://localhost:8080/bookSubscription/7

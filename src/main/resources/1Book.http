@@ -1,0 +1,27 @@
+###
+GET http://localhost:8080/book/all
+
+###
+GET http://localhost:8080/book/1
+
+###
+POST http://localhost:8080/book
+Content-Type: application/json
+
+{
+  "name": "Necronomicon"
+}
+
+###
+POST http://localhost:8080/book/register
+Content-Type: application/json
+
+{
+  "name": "Necronomicon",
+  "author": "H.P.Lovecraft",
+  "dateOfPublication": "2020-10-10",
+  "publisher": "Unknown"
+}
+
+###
+DELETE http://localhost:8080/book/1

@@ -1,0 +1,25 @@
+###
+GET http://localhost:8080/subscription/all
+
+###
+GET http://localhost:8080/subscription/1
+
+###
+GET http://localhost:8080/subscription/reader/5
+
+###
+GET http://localhost:8080/subscription/librarian/4
+
+###
+POST http://localhost:8080/subscription/register
+Content-Type: application/json
+
+{
+  "readerId": "5",
+  "librarianId": "4",
+  "wasGiven": "2020-03-04",
+  "willBeTaken": "2020-03-04"
+}
+
+###
+DELETE http://localhost:8080/subscription/6

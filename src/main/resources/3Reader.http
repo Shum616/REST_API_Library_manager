@@ -1,0 +1,27 @@
+###
+GET http://localhost:8080/reader/all
+
+###
+GET http://localhost:8080/reader/3
+
+###
+POST http://localhost:8080/reader
+Content-Type: application/json
+
+{
+  "name": "Johanes"
+}
+
+###
+POST http://localhost:8080/reader/register
+Content-Type: application/json
+
+{
+  "name": "Johanes",
+  "surname": "Eckerstrom",
+  "birthday": "1980-12-09",
+  "phone": "########"
+}
+
+###
+DELETE http://localhost:8080/reader/3
